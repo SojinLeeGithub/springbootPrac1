@@ -14,6 +14,7 @@ public class TestController {
 
     @GetMapping("/test")
     public List<Member> getAllMembers() {
-        return memberRepository.findAll();
+        List<Member> members = testService.getAllMember();
+        return members;
     }
 }
